@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PG near LPU</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+
+  <header class="card">
+    <div class="row">
+      <h1>🏨 PG/Rooms near LPU</h1>
+      <button id="theme" class="btn ghost" aria-label="Toggle dark mode">🌙</button>
+    </div>
+    <p class="muted">
+      Students moving to LPU struggle to find genuine PGs: listings are scattered across
+      WhatsApp groups and brokers, with hidden charges and no clarity on AC vs non-AC.
+      RentNest puts rentals from 5 areas in one place with transparent rent and direct owner contact.
+    </p>
+    <p class="muted"><b>Team:</b> Chetna, Akshat, Roohani</p>
+  </header>
+
+  <section class="card">
+    <div class="controls">
+      <input id="q" type="search" placeholder=" Search PG name/Amenity" aria-label="Search">
+      <select id="area" aria-label="Location"></select>
+      <select id="ac" aria-label="AC filter">
+        <option value="all">AC &amp; Non-AC</option>
+        <option value="ac">AC only</option>
+        <option value="non">Non-AC only</option>
+      </select>
+      <select id="sort" aria-label="Sort">
+        <option value="">Sort: Default</option>
+        <option value="asc">Price: low to high</option>
+        <option value="desc">Price: high to low</option>
+        <option value="rate">Rating: high to low</option>
+      </select>
+      <button id="add" class="btn">+ Add PG</button>
+    </div>
+    <p id="count" class="muted"></p>
+    <div id="grid" class="grid"></div>
+    <p id="empty" class="empty" hidden> No PGs match your search. Try changing the filters.</p>
+  </section>
+
+</main>
+
+<dialog id="dlg">
+  <form id="form" novalidate>
+    <h2>Add a PG</h2>
+    <label>PG name <input name="name" placeholder="e.g. Sunrise PG"><small></small></label>
+    <label>Location <select name="area"></select><small></small></label>
+    <label>Rent per month (₹) <input name="price" type="number" placeholder="e.g. 5500"><small></small></label>
+    <label>Room type
+      <select name="ac"><option value="">Select…</option><option value="1">AC</option><option value="0">Non-AC</option></select>
+      <small></small>
+    </label>
+    <label>Owner phone (10 digits) <input name="phone" inputmode="numeric" maxlength="10" placeholder="98XXXXXXXX"><small></small></label>
+    <label>Photo (upload, optional) <input name="photoFile" type="file" accept="image/*"><small></small></label>
+    <img id="prev" alt="Photo preview" hidden>
+    <label>…or photo link (optional) <input name="photoUrl" type="url" placeholder="https://…"><small></small></label>
+    <label>Amenities (comma separated) <input name="amen" placeholder="Wi-Fi, Backup light"><small></small></label>
+    <div class="row">
+      <button type="button" id="cancel" class="btn ghost">Cancel</button>
+      <button class="btn">Save PG</button>
+    </div>
+  </form>
+</dialog>
+
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="rental.js"></script>
+</body>
+</html>
