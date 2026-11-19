@@ -34,6 +34,7 @@ Filter by location (area dropdown)
 Filter by room type — AC, Non-AC, or both
 Sort by price (low→high / high→low) or rating
 
+
 🏠 PG Cards
 Each listing shows:
 Photo (with graceful fallback if image fails)
@@ -43,7 +44,9 @@ Monthly rent
 Amenity chips
 Star rating
 
+
 📞 Call and 💬 WhatsApp buttons (pre-filled message with PG name & area)
+
 
 ➕ Add Your Own PG
 Users can submit a new listing via a modal form with:
@@ -54,9 +57,11 @@ Amenities (comma-separated)
 Live photo preview before saving
 New listings are saved to localStorage and persist across sessions.
 
+
 🌙 Dark Mode
 Auto-detects system preference
 Manual toggle (🌙 / ☀️) with preference saved
+
 
 📱 Responsive Design
 Works on mobile, tablet, and desktop
@@ -80,6 +85,7 @@ rentnest/
 ├── style.css       # Theme, cards, controls, responsive styles
 └── rental.js       # Data (DB + IMG), rendering, filters, form logic
 
+
 🧭 How to Use
 Find a PG
 Type a PG name or amenity in the search box.
@@ -91,6 +97,7 @@ Fill in the details (all required fields are validated).
 Upload a photo or paste a link (optional).
 Click Save PG — it appears immediately and persists in your browser.
 
+
 🎨 Design Notes
 Light theme: vibrant magenta gradient background with soft cards
 Dark theme: deep navy tones with blue accents
@@ -98,11 +105,13 @@ Rounded, friendly UI — 14–28px radii throughout
 Hover micro-interactions — card lift and image zoom
 Accessibility touches — aria-labels, role="status" toast, aria-live region
 
+
 ⚠️ Limitations & Notes
 Data is stored per-browser via localStorage — listings added by one user aren't visible to others.
 No backend or database — this is a front-end-only prototype.
 Owner phone numbers are sample data; verify before contacting.
 Images are loaded from third-party URLs and may occasionally fail (the card handles this gracefully).
+
 
 🔮 Future Roadmap
 □ Backend + database so listings are shared across all users
