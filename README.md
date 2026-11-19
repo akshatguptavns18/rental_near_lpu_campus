@@ -72,6 +72,8 @@ Icons	Emoji + inline SVG
 Photos	Remote image URLs with lazy loading
 No frameworks. No build step. No dependencies. Just open index.html in a browser.
 
+
+
 📁 Project Structure
 rentnest/
 ├── index.html      # Page structure, dialog form, layout
