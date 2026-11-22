@@ -38,7 +38,7 @@ const DB = {
 
 // Photos from your original files, keyed by PG name
 const IMG = {
-  "Dreams PG": "https://lh3.googleusercontent.com/grass-cs/AABkmLf-FCq9M6i6iHHW1MpqUCUF50M14YgUlf73XDkrF8__Yhwa5lzq9GY6NayPk-Q0uUFFrpyOugY4LrqjNU8NRdMPbwnoJNAahvxmLHgZCHXd3qtxv2-U0B16kpl9rKMv4AfYkhoD3OkW_PrO=w408-h544-k-no",
+  "Dreams PG": "https://imgs.search.brave.com/n4JSoU3rtQcXPUMqs5vIGlInJRttl7AWXAjrFudRIIY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/c3RhdGljbWIuY29t/L21icGhvdG8vcGcv/Z3JkMi9jcm9wcGVk/X2ltYWdlcy8yMDI0/L0F1Zy8wOC9QaG90/b19oNDAwX3c1NDAv/R1IyLTQ1NzU0My0y/MjE0NDUxXzQwMF81/NDAuanBn",
   "Campus PG": "https://imgs.search.brave.com/mJw7MXWTABk-b3jQjclwJA2g_Zj1CLUI5iv4l9Q9YBQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zMy5h/cC1zb3V0aC0xLmFt/YXpvbmF3cy5jb20v/d3d3LmNpbWcuaW4v/aW1hZ2VzLzIwMjEv/MDcvMjcvNTMvXzE2/MjczODIxOTUxX2xh/cmdlLmpwZWc",
   "Apna Home": "https://imgs.search.brave.com/qk0W8nw1uLAnjwcfVCJSAG5CWkmRHRTdpeki_uSHu6Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly81Lmlt/aW1nLmNvbS9kYXRh/NS9TVi9GSi9CSC9B/TkRST0lELTU0OTgx/NDUxL3Byb2R1Y3Qt/anBlZy01MDB4NTAw/LmpwZw",
   "UrbanNest PG": "https://imgs.search.brave.com/3EwKudl2kIzsne_3oEQRxszWWFAJ873WH9Yg70basbY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/c3RhdGljbWIuY29t/L21icGhvdG8vcGcv/Z3JkMi9jcm9wcGVk/X2ltYWdlcy8yMDIz/L0ZlYi8yNS9QaG90/b19oNDAwX3c1NDAv/R1IyLTM1MzM5MS0x/NjczOTMxXzQwMF81/NDAucG5n",
